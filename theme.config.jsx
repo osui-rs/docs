@@ -15,6 +15,9 @@ export default {
     </>
   ),
   project: {
-    link: 'https://github.com/shuding/nextra'
+    link: 'https://github.com/osui-rs/osui'
   },
+  chat: {
+    link: 'https://discord.gg/invite/jqc9dR6kBZ'
+  }
 };
