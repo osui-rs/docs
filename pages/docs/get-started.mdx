@@ -1,0 +1,19 @@
+# Installation
+```bash filename="terminal" copy
+cargo add osui
+```
+
+# Hello World
+```rust filename="src/main.rs" copy
+use osui::prelude::*;
+
+fn main() {
+    launch!(app());
+}
+
+fn app() -> Element {
+    rsx! {
+        text { "Hello, World!" }
+    }
+}
+```

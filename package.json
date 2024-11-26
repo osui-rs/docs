@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "main": "pages/_app.jsx",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "next": "^15.0.3",
+    "nextra": "^3.2.4",
+    "nextra-theme-docs": "^3.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
