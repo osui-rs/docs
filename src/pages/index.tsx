@@ -3,7 +3,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
@@ -12,7 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 style={{fontFamily: 'Researcher'}}>{siteConfig.title}</h1>
+        <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
         <p className="hero__subtitle">Style your terminal, <b>The creative way</b></p>
         <div className={styles.buttons}>
           <Link
