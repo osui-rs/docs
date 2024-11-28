@@ -25,7 +25,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.json',
           editUrl:
-            'https://github.com/osui-rs/docs/',
+            'https://github.com/osui-rs/docs/tree/master/',
         },
         blog: false,
         // blog: {
@@ -85,8 +85,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Installation',
+              to: '/docs/',
             },
           ],
         },
@@ -104,18 +104,31 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: 'Resources',
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Crossterm',
+              href: 'https://github.com/crossterm-rs/crossterm',
+            },
+            {
+              label: 'Rust-lang',
+              href: 'https://rust-lang.org/',
             },
           ],
         },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/facebook/docusaurus',
+        //     },
+        //   ],
+        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} OSUI, Inc. Built with Docusaurus.`,
     },
