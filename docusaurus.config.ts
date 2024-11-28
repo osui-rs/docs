@@ -27,18 +27,19 @@ const config: Config = {
           editUrl:
             'https://github.com/osui-rs/docs/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/osui-rs/docs/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   editUrl:
+        //     'https://github.com/osui-rs/docs/',
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -60,7 +61,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'left',
@@ -105,10 +106,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
