@@ -80,3 +80,17 @@ fn app() -> Element {
     }
 }
 ```
+
+## Handler functions
+Instead of closures which are tricky to work with on structs, We use `Handler`, It's basically a closure wrapped with a `Arc<Mutex<T>>`
+```rust
+fn app() -> Element {
+    rsx! {
+        button {
+            on_click: fn(btn: &mut Button, event, document) {
+                // do something
+            }
+        }
+    }
+}
+```
