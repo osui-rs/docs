@@ -26,3 +26,5 @@ Retrieves a mutable reference to a boxed element of type T by its string identif
 Retrieves a mutable reference to a boxed element by its string identifier, returning None if no such element exists
 ### `render()`
 Renders/reloads the screen, useful when a element updates
+### `use_state<T>(name: &str) -> &mut T`
+Gets element (DataHolder) by id and returns the data of it: `&mut T`

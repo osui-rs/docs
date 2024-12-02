@@ -94,3 +94,14 @@ fn app() -> Element {
     }
 }
 ```
+
+## Variables
+Instead of creating a `data_holder as u32` manually you can just define a variable with `@name: type;`
+> :::info Put this on the end of the rsx to avoid any conflicts with existing elements
+```rust
+fn app() -> Element {
+    rsx! {
+        @count: u32;
+    }
+}
+```
