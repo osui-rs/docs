@@ -70,17 +70,6 @@ fn app() -> Element {
 }
 ```
 
-## Type assignment
-In special elements like `data_holder` You can specify what `type` the element holds. It would act like `my_fn::<Type>()`
-```rust
-fn app() -> Element {
-    rsx! {
-        // assign the type u32
-        data_holder as u32 { id: "count" }
-    }
-}
-```
-
 ## Handler functions
 Instead of closures which are tricky to work with on structs, We use `Handler`, It's basically a closure wrapped with a `Arc<Mutex<T>>`
 ```rust
@@ -95,13 +84,20 @@ fn app() -> Element {
 }
 ```
 
-## Variables
-Instead of creating a `data_holder as u32` manually you can just define a variable with `@name: type;`
-> :::info Put this on the end of the rsx to avoid any conflicts with existing elements
+## Handler functions (with dependents)
+If you have a `State<T>` and want to use it, you have to put a @ before the code block like this
 ```rust
 fn app() -> Element {
+    let count = State::new();
+
     rsx! {
-        @count: u32;
+        button {
+            on_click: fn(btn: &mut Button, event, document) @count {
+                let count = count.use_state(); // locks count so it can be used
+            },
+            "Current count: {count}"
+        }
     }
 }
 ```
+> :::info you can add multiple decedents by separating them via `,` like: @var1, var2, var3

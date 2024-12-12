@@ -22,9 +22,7 @@ Restarts the program
 Retrieves a mutable reference to a boxed element of type T by its string identifier, returning None if no such element exists.
 > :::info Please make sure that the type of the element is correctly matched to the element of that id
 ### `get_element_by_id_raw(id: &str) -> Option<&mut Element>`
-> :::warn Not recommended to use this function, Use `get_element_by_id` instead
+> :::warning Not recommended to use this function, Use `get_element_by_id` instead
 Retrieves a mutable reference to a boxed element by its string identifier, returning None if no such element exists
 ### `render()`
 Renders/reloads the screen, useful when a element updates
-### `use_state<T>(name: &str) -> &mut T`
-Gets element (DataHolder) by id and returns the data of it: `&mut T`

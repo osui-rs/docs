@@ -10,7 +10,7 @@ Handler::new(|btn: &mut Button, event, document| {
     // do something
 })
 ```
-A better way to do this is:
+### Recommended way
 ```rust
 rsx! {
     button {
@@ -21,4 +21,22 @@ rsx! {
     }
 }
 ```
-> :::info `fn() {}` is a part of our macro `rsx!`. In rust you would normally use `|| {}`
+### With dependents
+If you have a `State<T>` and want to use it, you have to put a @ before the code block like this
+```rust
+fn app() -> Element {
+    let count = State::new();
+
+    rsx! {
+        button {
+            on_click: fn(btn: &mut Button, event, document) @count {
+                let count = count.use_state(); // locks count so it can be used
+            },
+            "Current count: {count}"
+        }
+    }
+}
+```
+> :::info you can add multiple decedents by separating them via `,` like: @var1, var2, var3
+
+> :::info `fn() {}` is a part of the OSUI macro `rsx!`. In rust you would normally use `|| {}`

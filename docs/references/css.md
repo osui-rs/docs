@@ -26,7 +26,7 @@ fn styles() -> Css {
 
         // Style by state
 
-        "my_btn": clicked { // When the element state is clicked
+        "my_btn": "clicked" { // When the element state is clicked
             color: Blue,
         }
     }
