@@ -22,7 +22,7 @@ rsx! {
 }
 ```
 ### With dependents
-If you have a `State<T>` and want to use it, you have to put a @ before the code block like this
+If you have a `State<T>` and want to use it in a `fn()`, you have to put a @ before the code block like this
 ```rust
 fn app() -> Element {
     let count = State::new();

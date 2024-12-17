@@ -9,7 +9,7 @@ rsx! {
     button {
         style: style! {
             color: Red,
-            clicked { // when the button state is 'clicked'
+            "clicked" { // when the button state is 'clicked'
                 color: Blue,
             } 
         },

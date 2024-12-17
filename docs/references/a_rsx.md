@@ -101,3 +101,17 @@ fn app() -> Element {
 }
 ```
 > :::info you can add multiple decedents by separating them via `,` like: @var1, var2, var3
+
+## Static text
+If your text doesn't use variables that will change you can put `static` right before the text to signal that it's static.
+```rust
+fn app() -> Element {
+    let count = 69; // count won't change since it's not mutable
+
+    rsx! {
+        text {
+            static "Current count: {count}"
+        }
+    }
+}
+```

@@ -2,15 +2,13 @@
 title: CSS
 ---
 
-Along with the `Css` type, This macro provides styling for multiple elements by their class name or struct name.
+Along with the `Css` type, This macro provides styling for multiple elements by their class name.
 
 ## Example
 In this case we will make a button with the classname `my_btn`. And set `styling`
 ```rust
 fn app() -> Element {
     rsx! {
-        styling: Some(styles()) // Set the css styling for the div.
-
         button { class: "my_btn", "Click me!" }
     }
 }
@@ -25,7 +23,6 @@ fn styles() -> Css {
         }
 
         // Style by state
-
         "my_btn": "clicked" { // When the element state is clicked
             color: Blue,
         }
@@ -33,19 +30,10 @@ fn styles() -> Css {
 }
 ```
 
-## Style by struct name
+## `hover`
+The `hover` state is on every element but only if it's focused/hovered.
 ```rust
-fn styles() -> Css {
-    css! {
-        Button { // style by the struct name
-            color: Red,
-        }
-
-        // Style by state
-
-        Button: clicked { // When the element state is clicked
-            color: Blue,
-        }
-    }
+"my_btn": "clicked" {
+    color: Green,
 }
 ```
