@@ -25,6 +25,7 @@ fn app() -> Element {
 ```
 
 ## A slightly more advanced app (counter)
+This app uses state management and a function using the state as a dependent
 ```rust title='src/main.rs'
 use osui::prelude::*;
 
@@ -33,20 +34,16 @@ fn main() {
 }
 
 fn app() -> Element {
+    let count = State::new(0);
+
     rsx! {
-        // Create a button with a on_click handler
         button {
-            on_click: fn(btn: &mut Button, _, document) {
-                let count = document.use_state::<u32>("count");
-                *count += 1;
-                btn.children.set_text(&count.to_string());
+            on_click: fn(_, _, _) @count {
+                count += 1;
             },
 
-            "0"
+            "The current count is: {count}"
         }
-
-        // Create a elemental field
-        @count: u32;
     }
 }
 ```

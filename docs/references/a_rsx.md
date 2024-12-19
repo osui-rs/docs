@@ -115,3 +115,19 @@ fn app() -> Element {
     }
 }
 ```
+
+## Instructions
+Add an instruction by putting a `@` before it, like this:
+```rust
+pub fn app() -> Element {
+    rsx! {
+        @SetStyle(css! { // the SetStyle instruction
+            "title": {
+                color: Green,
+            }
+        })
+
+        text { class: "title", static "Hello world!" }
+    }
+}
+```

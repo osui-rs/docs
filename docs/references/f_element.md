@@ -2,7 +2,9 @@
 title: Element
 ---
 
-`Element` is a type alias of `Box<dyn ElementWidget>`. It makes the code look cleaner
+A element is a very important part of a UI library, It's what makes it possible.
+
+`Element` is a type alias of `Box<dyn ElementWidget>`. It makes the code look cleaner.
 
 # ElementWidget
 `ElementWidget` is a trait that defines the Elements and it's rendering / event updates.
@@ -15,6 +17,10 @@ title: Element
 ### `event(&mut self, event: Event, document: &Document)`
 - **optional**
 - This function updates the element when there is a event
+
+### `event(&mut self, document: &mut Document)`
+- **optional**
+- This function runs when the app first runs. It helps with element initialization after the `rsx!` stage.
 
 
 # ElementCore
