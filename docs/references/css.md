@@ -7,25 +7,25 @@ Along with the `Css` type, This macro provides styling for multiple elements by 
 ## Example
 In this case we will make a button with the classname `my_btn`. And set `styling`
 ```rust
-fn app() -> Element {
+#[component]
+fn App() -> Element {
     rsx! {
-        button { class: "my_btn", "Click me!" }
-    }
-}
-```
+        @SetStyle(css! {
+            blue-outline {
+                outline: true,
+                outline_color: Blue,
+            }
 
-## Style by classname
-```rust
-fn styles() -> Css {
-    css! {
-        "my_btn" { // style by classname
-            color: Red,
-        }
+            red {
+                color: Red,
+            }
 
-        // Style by state
-        "my_btn": "clicked" { // When the element state is clicked
-            color: Blue,
-        }
+            green-hover: "hover" {
+                color: Green,
+            }
+        })
+
+        button { class: "red blue-outline green-hover", "Click me!" }
     }
 }
 ```
@@ -33,7 +33,7 @@ fn styles() -> Css {
 ## `hover`
 The `hover` state is on every element but only if it's focused/hovered.
 ```rust
-"my_btn": "clicked" {
+"my_btn": "hover" {
     color: Green,
 }
 ```

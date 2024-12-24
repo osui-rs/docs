@@ -24,7 +24,8 @@ rsx! {
 ### With dependents
 If you have a `State<T>` and want to use it in a `fn()`, Pub a @ before the code block like this
 ```rust
-pub fn app() -> Element {
+#[component]
+pub fn App() -> Element {
     let count = State::new(0);
     rsx! {
         button {

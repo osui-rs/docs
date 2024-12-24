@@ -14,10 +14,11 @@ cargo add osui
 use osui::prelude::*;
 
 fn main() {
-    launch!(app());
+    launch!(App);
 }
 
-fn app() -> Element {
+#[component]
+fn App() -> Element {
     rsx! {
         text { "Hello, World!" }
     }
@@ -30,10 +31,11 @@ This app uses state management and a function using the state as a dependent
 use osui::prelude::*;
 
 fn main() {
-    launch!(app());
+    launch!(App);
 }
 
-fn app() -> Element {
+#[component]
+fn App() -> Element {
     let count = State::new(0);
 
     rsx! {
