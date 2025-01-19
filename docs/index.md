@@ -4,48 +4,51 @@ slug: /
 ---
 
 ## Installation
+
 On a cargo project run
+
 ```bash
 cargo add osui
 ```
 
-## Simple app
+## Hello world
+
 ```rust title='src/main.rs'
 use osui::prelude::*;
 
-fn main() {
-    launch!(App);
+fn main() -> Result<()> {
+    let mut con = console::init(true)?;
+
+    con.run(app())?;
+
+    con.end()
 }
 
-#[component]
-fn App() -> Element {
+pub fn app() -> Element {
     rsx! {
-        text { "Hello, World!" }
+        "Hello, World!"
     }
 }
 ```
 
-## A slightly more advanced app (counter)
-This app uses state management and a function using the state as a dependent
+## Counter
+
 ```rust title='src/main.rs'
 use osui::prelude::*;
 
-fn main() {
-    launch!(App);
+fn main() -> Result<()> {
+    let mut con = console::init(true)?;
+
+    con.run(app())?;
+
+    con.end()
 }
 
-#[component]
-fn App() -> Element {
-    let count = State::new(0);
+pub fn app() -> Element {
+    let count = use_state(0);
 
     rsx! {
-        button {
-            on_click: fn(_, _, _) @count {
-                count += 1;
-            },
-
-            "The current count is: {count}"
-        }
+        button { on_click: move |_| count+=1, "{count}" }
     }
 }
 ```
