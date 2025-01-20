@@ -14,16 +14,16 @@ const FeatureList: FeatureItem[] = [
     image: '/img/osui.png',
     description: (
       <>
-        With RSX, and CSS, You can easily express your imagination.
+        With RSX, You can easily express a UI. With it's modularity you can also expand your ui into multiple components
       </>
     ),
   },
   {
-    title: 'Efficient',
+    title: 'Custom engine',
     image: '/img/osui.png',
     description: (
       <>
-        OSUI only renders when needs to, and rebuilds if necessary.
+        OSUI has it's own TUI rendering engine. You can access the engine directly to describe your ui
       </>
     ),
   },
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     image: '/img/osui.png',
     description: (
       <>
-        Events and console output are powered by Crossterm.
+        Events and console output are powered by Crossterm. And then handled by our engine
       </>
     ),
   },
