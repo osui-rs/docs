@@ -1,7 +1,7 @@
 ---
 title: Releasing OSUI v0.0.9
 description: A new upcoming version of OSUI will come out. Let's re-write it.
-slug: welcome-docusaurus-v2
+slug: osui-0.0.9-rewrite
 authors:
   - kleo-dev
 ---
@@ -13,7 +13,7 @@ OSUI v0.0.9 Comes with a engine that works under the hood and can be manipulated
 - Game engine
 - Fluid simulation
 - Velocity
-This may seem like a gimmick but it's essential to provide features only when needed and prioritize performance to extend reliability. [Read more](/docs/next/engine)
+This may seem like a gimmick but it's essential to provide features only when needed and prioritize performance to extend reliability. [Read more](/docs/0.0.8/engine)
 
 ## ⚡️ Improvements
 - 📌 Reliable
