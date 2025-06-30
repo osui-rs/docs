@@ -7,7 +7,7 @@ This macro is the recommended way to describe a ui, it is a div that holds multi
 fn app() -> Element {
     rsx! {
         button { "click me" }
-        text { "This is some text" }****
+        text { "This is some text" }
     }
 }
 ```
