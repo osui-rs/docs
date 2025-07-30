@@ -9,6 +9,23 @@ OSUI Extensions are a practical way to extend the possibilities with OSUI, Exten
 
 You likely noticed that we used this function in the [Hello World App With Velocity](/docs/next/#hello-world-app-with-velocity) example, this function simply allows for structures implementing [Extension](/docs/next/extensions#trait-extension) to be included in the program.
 
+---
+
+## `Handler<E: Event>`
+
+A `Handler` is a `Component` that is called when a specific event is dispatched, typically through a `Extension`.
+
+### 📦 Usage
+
+```rust
+rsx!{
+    @Handler::new(|widget, t: &TickEvent| {}
+    "Hello World"
+}
+```
+
+---
+
 ## Trait `Extension`
 
 ### `init(&mut self, _screen: Arc<Screen>)`
