@@ -29,7 +29,7 @@ The orchestrator. It holds the list of top-level `Widget`s, manages extensions, 
 *   Iterates through top-level widgets, initiating their rendering.
 *   Calls `Extension::on_close` and restores terminal state on shutdown.
 
-(See [Reference: Screen API](../reference/screen_api.md) for more details)
+(See [Reference: Screen API](/docs/reference/screen_api.md) for more details)
 
 ### 2. `Widget` (`Arc<Widget>`)
 
@@ -39,7 +39,7 @@ The container for an `Element` and its `Component`s. It's the unit passed around
 *   `DynWidget`: Its `Element` can be re-instantiated (rebuilt) if its dependencies change. This rebuild happens *before* its `render` method is called in a subsequent frame.
 *   Provides access to its `Element` (`get_elem()`) and `Component`s (`get()`, `set_component()`).
 
-(See [Reference: Widget API](../reference/widget_api.md) for more details)
+(See [Reference: Widget API](/docs/reference/widget_api.md) for more details)
 
 ### 3. `Element` (`Box<dyn Element>`)
 
@@ -67,7 +67,7 @@ The drawing context for a single element. It's a mutable structure that holds:
 *   `clear()`: Resets the scope for the next element.
 *   `set_parent_size()`: Crucial for container elements to establish the bounding box for their children.
 
-(See [Reference: RenderScope API](../reference/render_scope_api.md) for more details)
+(See [Reference: RenderScope API](/docs/reference/render_scope_api.md) for more details)
 
 ### 5. `Transform` and `Style` Components
 
@@ -76,7 +76,7 @@ These components, attached to a `Widget`, provide the declarative rules for layo
 *   `Transform`: Contains `Position` and `Dimension` rules, plus `margin` and `padding`. These are resolved into `RawTransform` by `RenderScope`.
 *   `Style`: Contains `Background` and `foreground` color. Applied to `RenderScope`.
 
-(See [Reference: Style API](../reference/style_api.md) for more details)
+(See [Reference: Style API](/docs/reference/style_api.md) for more details)
 
 ### 6. `Extension`s
 
@@ -84,7 +84,7 @@ Extensions are hooks into the pipeline.
 
 *   `Extension::render_widget(scope, widget)`: Called for each top-level widget *before* its `Element::render`. Allows extensions to inspect or modify the `RenderScope` or widget before rendering.
 
-(See [Reference: Extensions API](../reference/extensions_api.md) for more details)
+(See [Reference: Extensions API](/docs/reference/extensions_api.md) for more details)
 
 ## Flow Diagram (Conceptual)
 
