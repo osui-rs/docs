@@ -49,7 +49,7 @@ The actual drawable logic. Each `Element` implementation defines how it appears.
 *   `after_render(&mut self, scope: &mut RenderScope)`: For containers, this is where children are processed and recursively rendered. It's also where the element might determine its final `Dimension::Content` size based on children.
 *   `draw_child(&mut self, element: &Arc<Widget>)`: Called by `rsx!` to establish parent-child relationships. Children processed by a parent are marked `NoRenderRoot` to prevent the `Screen` from rendering them independently.
 
-(See [Reference: Widget API - Element Trait](../reference/widget_api.md#element-trait) and [Guides: Custom Elements](../guides/custom_elements.md) for more details)
+(See [Reference: Widget API - Element Trait](/reference/widget_api#element-trait) and [Guides: Custom Elements](/docs/guides/custom_elements) for more details)
 
 ### 4. `RenderScope`
 

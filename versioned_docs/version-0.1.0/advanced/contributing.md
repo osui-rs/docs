@@ -59,6 +59,3 @@ We welcome contributions to OSUI! Whether it's reporting bugs, suggesting featur
 *   **Formatting**: Use `cargo fmt` to automatically format your code according to Rust's standard style.
 
 Thank you for considering contributing to OSUI! Your efforts help make this project better for everyone.
-
-[**Return to Overview**](../intro/overview.md)
-
