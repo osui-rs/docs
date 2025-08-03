@@ -1,3 +1,6 @@
+# NOTE
+The docs for version 0.1 or above are generated using https://github.com/kleo-dev/spark
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
