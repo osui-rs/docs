@@ -8,6 +8,8 @@ authors:
 
 Why would i bother re-writing a TUI library? Well there was a LOT of things wrong with the old version of OSUI. It had bugs and lacks performance. v0.0.9 fixes all of those and hopefully we can achieve a better future for OSUI. With that being said. Let's get into what i plan on doing.
 
+<!-- truncate -->
+
 ## ⚙️ OSUI Engine
 OSUI v0.0.9 Comes with a engine that works under the hood and can be manipulated to match your needs. Here are a few examples:
 - Game engine

@@ -31,7 +31,7 @@ OSUI automates this process. When a `State<T>` value is modified, any `DynWidget
     *   `**my_state.get() = new_value` (or `my_state.get().deref_mut().field = new_value`): Mutates the value directly through a `MutexGuard`. The `DerefMut` implementation automatically marks the state as changed by setting `inner.changed = inner.dependencies`.
 *   **Dependency Tracking**: Implements the `DependencyHandler` trait, allowing `DynWidget`s to register themselves.
 
-(See [Reference: State API](/docs/reference/state_api.md) for more details)
+(See [Reference: State API](/docs/reference/state_api) for more details)
 
 ### 2. `DependencyHandler` Trait
 
@@ -40,7 +40,7 @@ A trait that `State<T>` (and potentially other future reactive types) implements
 *   `add()`: Called when a `DynWidget` first registers itself as a listener to this dependency. It increments an internal counter of listeners.
 *   `check()`: Called by `DynWidget` during its `auto_refresh` cycle. It decrements the `changed` counter and returns `true` if there are still pending changes to be processed by a listener. This ensures each listener processes a change only once per update cycle.
 
-(See [Reference: State API - DependencyHandler Trait](/docs/reference/state_api.md#dependencyhandler-trait) for more details)
+(See [Reference: State API - DependencyHandler Trait](/docs/reference/state_api#dependencyhandler-trait) for more details)
 
 ### 3. `DynWidget`: The Reactive Widget Wrapper
 
@@ -54,7 +54,7 @@ A trait that `State<T>` (and potentially other future reactive types) implements
     *   `refresh()`: Forces the widget to rebuild immediately by re-executing its creation closure.
     *   `auto_refresh()`: The core of reactivity. It iterates through all registered `DependencyHandler`s. If `handler.check()` returns `true` for any of them, it calls `refresh()` to rebuild the widget.
 
-(See [Reference: Widget API - DynWidget Struct](/docs/reference/widget_api.md#dynwidget-struct) for more details)
+(See [Reference: Widget API - DynWidget Struct](/docs/reference/widget_api#dynwidget-struct) for more details)
 
 ## How Reactive Updates Work in Practice
 

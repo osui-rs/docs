@@ -8,6 +8,8 @@ authors:
 
 Greetings to everyone, i haven't been working on OSUI for the past 6 months, i have been busy with other projects and haven't found myself motivated enough for OSUI, now i'm ready to go back to OSUI and make major changes.
 
+<!-- truncate -->
+
 ## ⚡️ Changes
 
 - ⚙️ Rewrite the entire codebase
@@ -20,7 +22,7 @@ OSUI Components and Extensions are a important design choice for OSUI, They stor
 
 ### Extensions
 
-A OSUI extension extends the functionality of the current elements and program, a good example is in our [Hello World App With Velocity](/docs/#hello-world-app-with-velocity) example, where we use the built in `VelocityExtension` as well as the `Velocity(x, y)` component, by design it is required for a extension to have the components be optional for the elements, unless there is a very specific reason not to make it optional.
+A OSUI extension extends the functionality of the current elements and program, a good example is in our [Hello World App With Velocity](/docs/0.0.9/#hello-world-app-with-velocity) example, where we use the built in `VelocityExtension` as well as the `Velocity(x, y)` component, by design it is required for a extension to have the components be optional for the elements, unless there is a very specific reason not to make it optional.
 
 ### Components
 
