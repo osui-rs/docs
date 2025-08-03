@@ -22,7 +22,7 @@ The central component for defining layout rules. It encapsulates all the propert
 *   `px: u16`, `py: u16`: **Padding** - internal space between the element's border and its content/children. This increases the overall size of the element.
 *   `mx: i32`, `my: i32`: **Margin** - an offset applied *after* the element's position is calculated. This creates space *around* the element relative to its parent's edges. Can be negative for overlap.
 
-(See [Reference: Style API - Transform](.//docs/reference/style_api.md#transform-component) for full details)
+(See [Reference: Style API - Transform](/docs/reference/style_api.md#transform-component) for full details)
 
 ### `Position` Enum
 
@@ -32,7 +32,7 @@ Determines the `x` or `y` coordinate.
 *   `Center`: Centers the element within the parent's available space on that axis.
 *   `End`: Aligns the element to the right or bottom edge of the parent.
 
-(See [Reference: Style API - Position](.//docs/reference/style_api.md#position-enum) for full details)
+(See [Reference: Style API - Position](/docs/reference/style_api.md#position-enum) for full details)
 
 ### `Dimension` Enum
 
@@ -42,13 +42,13 @@ Determines the `width` or `height`.
 *   `Content`: Sizes itself to fit its content (text) or children. This is dynamic.
 *   `Const(u16)`: Fixed size in terminal cells.
 
-(See [Reference: Style API - Dimension](.//docs/reference/style_api.md#dimension-enum) for full details)
+(See [Reference: Style API - Dimension](/docs/reference/style_api.md#dimension-enum) for full details)
 
 ### `RawTransform` Struct
 
 This is the internal, resolved representation of a `Transform`. After all calculations, a `Transform`'s declarative rules are converted into a `RawTransform` with concrete `u16` values for `x`, `y`, `width`, `height`, `px`, `py`. This `RawTransform` is then used by the `RenderScope` for actual drawing.
 
-(See [Reference: Style API - RawTransform](.//docs/reference/style_api.md#rawtransform-struct) for full details)
+(See [Reference: Style API - RawTransform](/docs/reference/style_api.md#rawtransform-struct) for full details)
 
 ## Layout Calculation Flow (Simplified)
 
