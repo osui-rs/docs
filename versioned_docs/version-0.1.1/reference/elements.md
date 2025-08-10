@@ -46,11 +46,11 @@ rsx! {
 
 The `elements` module exports several other essential UI elements, each with its own dedicated documentation:
 
-*   **[`Div`](../reference/elements/div.md)**: A generic, transparent container element used for grouping children and applying layout and style.
-*   **[`FlexRow`](../reference/elements/flex.md)**: A layout container that arranges its children horizontally in a row.
-*   **[`FlexCol`](../reference/elements/flex.md)**: A layout container that arranges its children vertically in a column.
-*   **[`Heading`](../reference/elements/heading.md)**: Renders large, stylized ASCII art text using `figlet-rs`.
-*   **[`Input`](../reference/elements/input.md)**: An interactive element for user text input.
-*   **[`Paginator`](../reference/elements/paginator.md)**: A container that manages multiple "pages" (children) and allows navigation between them.
+*   **[`Div`](/docs/reference/elements/div)**: A generic, transparent container element used for grouping children and applying layout and style.
+*   **[`FlexRow`](/docs/reference/elements/flex)**: A layout container that arranges its children horizontally in a row.
+*   **[`FlexCol`](/docs/reference/elements/flex)**: A layout container that arranges its children vertically in a column.
+*   **[`Heading`](/docs/reference/elements/heading)**: Renders large, stylized ASCII art text using `figlet-rs`.
+*   **[`Input`](/docs/reference/elements/input)**: An interactive element for user text input.
+*   **[`Paginator`](/docs/reference/elements/paginator)**: A container that manages multiple "pages" (children) and allows navigation between them.
 
 These elements, combined with the `Transform` and `Style` components, provide a powerful foundation for building diverse and complex terminal user interfaces in OSUI.

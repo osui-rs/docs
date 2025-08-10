@@ -128,7 +128,7 @@ rsx! {
 
 Beyond `crossterm` events, you can define and dispatch your own custom event types using the `event!` macro. This is useful for communication between different parts of your application or custom extensions.
 
-See the [Advanced: Custom Events](/docs/advanced/custom_events) guide for details.
+See the [Advanced: Custom Events](/docs/0.1.0/advanced/custom_events) guide for details.
 
 ## Summary
 

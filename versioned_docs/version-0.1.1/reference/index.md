@@ -4,28 +4,28 @@ This section provides detailed documentation for all public modules, structs, en
 
 ## Core Concepts & Structure
 
-*   [Screen](../reference/screen.md): The main application context for managing widgets and extensions.
-*   [Widget Model](../reference/widget.md): `Element`, `Component`, `Widget` (Static/Dynamic), and `WidgetLoad`.
-*   [Rendering & Scope](../reference/render-scope.md): `RenderScope`, `RenderMethod`, and `ElementRenderer`.
-*   [State Management](../reference/state.md): `State<T>` and `DependencyHandler` for reactivity.
-*   [Frontend & Macros](../reference/frontend.md): `RsxElement`, `Rsx`, and the `event!`, `component!`, `transform!`, `rsx!` macros.
-*   [Utilities](../reference/utils.md): Helper functions for terminal control and string manipulation.
+*   [Screen](/docs/reference/screen): The main application context for managing widgets and extensions.
+*   [Widget Model](/docs/reference/widget): `Element`, `Component`, `Widget` (Static/Dynamic), and `WidgetLoad`.
+*   [Rendering & Scope](/docs/reference/render-scope): `RenderScope`, `RenderMethod`, and `ElementRenderer`.
+*   [State Management](/docs/reference/state): `State<T>` and `DependencyHandler` for reactivity.
+*   [Frontend & Macros](/docs/reference/frontend): `RsxElement`, `Rsx`, and the `event!`, `component!`, `transform!`, `rsx!` macros.
+*   [Utilities](/docs/reference/utils): Helper functions for terminal control and string manipulation.
 
 ## Built-in Components & Extensions
 
-*   [Style & Layout](../reference/style.md): `Transform`, `Position`, `Dimension`, `Style`, `Background`.
-*   [Extensions Overview](../reference/extensions.md): The `Extension` trait, `Event` trait, and `Context` for global behaviors.
-*   [Focus Extension](../reference/extensions/focus.md): `AlwaysFocused`, `Focused`, `RelativeFocusExtension` for keyboard navigation.
-*   [ID Extension](../reference/extensions/id.md): `IdExtension`, `Id` for unique widget identification.
-*   [Input Handling Extension](../reference/extensions/input_handling.md): `InputExtension` for keyboard and mouse input.
-*   [Tick Extension](../reference/extensions/tick.md): `TickExtension`, `TickEvent` for timed events.
-*   [Velocity Extension](../reference/extensions/velocity.md): `VelocityExtension`, `Velocity` for simple animations.
+*   [Style & Layout](/docs/reference/style): `Transform`, `Position`, `Dimension`, `Style`, `Background`.
+*   [Extensions Overview](/docs/reference/extensions): The `Extension` trait, `Event` trait, and `Context` for global behaviors.
+*   [Focus Extension](/docs/reference/extensions/focus): `AlwaysFocused`, `Focused`, `RelativeFocusExtension` for keyboard navigation.
+*   [ID Extension](/docs/reference/extensions/id): `IdExtension`, `Id` for unique widget identification.
+*   [Input Handling Extension](/docs/reference/extensions/input_handling): `InputExtension` for keyboard and mouse input.
+*   [Tick Extension](/docs/reference/extensions/tick): `TickExtension`, `TickEvent` for timed events.
+*   [Velocity Extension](/docs/reference/extensions/velocity): `VelocityExtension`, `Velocity` for simple animations.
 
 ## Built-in UI Elements
 
-*   [Elements Overview](../reference/elements.md): General Element trait and String as an Element.
-*   [Div](../reference/elements/div.md): A generic container element.
-*   [Flex Containers](../reference/elements/flex.md): `FlexRow` and `FlexCol` for automatic horizontal/vertical layout.
-*   [Heading](../reference/elements/heading.md): Renders large ASCII art text.
-*   [Input](../reference/elements/input.md): An interactive text input field.
-*   [Paginator](../reference/elements/paginator.md): Manages and navigates between multiple pages/children.
+*   [Elements Overview](/docs/reference/elements): General Element trait and String as an Element.
+*   [Div](/docs/reference/elements/div): A generic container element.
+*   [Flex Containers](/docs/reference/elements/flex): `FlexRow` and `FlexCol` for automatic horizontal/vertical layout.
+*   [Heading](/docs/reference/elements/heading): Renders large ASCII art text.
+*   [Input](/docs/reference/elements/input): An interactive text input field.
+*   [Paginator](/docs/reference/elements/paginator): Manages and navigates between multiple pages/children.

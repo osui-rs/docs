@@ -7,7 +7,7 @@ OSUI Extensions are a practical way to extend the possibilities with OSUI, Exten
 
 ### `screen.extension(&mut self, ext: Extension)`
 
-You likely noticed that we used this function in the [Hello World App With Velocity](/docs/next/#hello-world-app-with-velocity) example, this function simply allows for structures implementing [Extension](/docs/next/extensions#trait-extension) to be included in the program.
+You likely noticed that we used this function in the [Hello World App With Velocity](/docs/0.0.9/#hello-world-app-with-velocity) example, this function simply allows for structures implementing [Extension](/docs/0.0.9/extensions#trait-extension) to be included in the program.
 
 ---
 

@@ -141,7 +141,7 @@ OSUI uses a few internal components to control rendering behavior:
 
 *   `NoRender`: If a widget has this component, the `Screen`'s main rendering loop will skip rendering it directly. This is typically used for widgets that are managed and rendered by their parent `Element::after_render` method.
 *   `NoRenderRoot`: Similar to `NoRender`, but specifically signals that the widget is a child being managed by a parent element, preventing the `Screen` from considering it a top-level root widget for direct rendering.
-*   `Handler<E>`: (Described in [Handling Input](/docs/guides/handling_input) and [Extensions API](/docs/reference/extensions_api)) Enables widgets to subscribe to specific event types.
+*   `Handler<E>`: (Described in [Handling Input](/docs/0.1.0/guides/handling_input) and [Extensions API](/docs/0.1.0/reference/extensions_api)) Enables widgets to subscribe to specific event types.
 
 ## Usage Patterns
 

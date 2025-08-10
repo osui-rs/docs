@@ -39,4 +39,4 @@ fn main() -> std::io::Result<()> {
 
 This example initializes a `Screen`, uses the `rsx!` macro to define a basic text element, draws it to the screen, and then starts the rendering loop.
 
-For more detailed information on installation and setting up your project, refer to the [Getting Started Guide](../intro/getting-started.md). For comprehensive API details, explore the [Reference section](../reference/index.md).
+For more detailed information on installation and setting up your project, refer to the [Getting Started Guide](/docs/). For comprehensive API details, explore the [Reference section](/docs/reference/).

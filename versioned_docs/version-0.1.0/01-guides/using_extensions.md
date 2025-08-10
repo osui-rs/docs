@@ -105,10 +105,10 @@ Once registered, the `Screen` will call the appropriate lifecycle methods of you
 
 OSUI comes with several useful built-in extensions:
 
-*   [`InputExtension`](/docs/reference/extensions_api#inputextension): Handles keyboard input and dispatches `crossterm::event::Event`s. **Crucial for interactive applications.**
-*   [`TickExtension`](/docs/reference/extensions_api#tickextension): Dispatches `TickEvent`s at a specified rate, useful for animations or periodic updates.
-*   [`VelocityExtension`](/docs/reference/extensions_api#velocityextension): Automatically updates the `Transform` of widgets that have a `Velocity` component, causing them to move.
-*   [`IdExtension`](/docs/reference/extensions_api#idextension): Provides a way to retrieve specific widgets by a unique `Id` component. (Note: The current `IdExtension` implementation only *stores* a screen reference but doesn't actively do anything unless you manually call its `get_element` method.)
+*   [`InputExtension`](/docs/0.1.0/reference/extensions_api#inputextension): Handles keyboard input and dispatches `crossterm::event::Event`s. **Crucial for interactive applications.**
+*   [`TickExtension`](/docs/0.1.0/reference/extensions_api#tickextension): Dispatches `TickEvent`s at a specified rate, useful for animations or periodic updates.
+*   [`VelocityExtension`](/docs/0.1.0/reference/extensions_api#velocityextension): Automatically updates the `Transform` of widgets that have a `Velocity` component, causing them to move.
+*   [`IdExtension`](/docs/0.1.0/reference/extensions_api#idextension): Provides a way to retrieve specific widgets by a unique `Id` component. (Note: The current `IdExtension` implementation only *stores* a screen reference but doesn't actively do anything unless you manually call its `get_element` method.)
 
 You use these built-in extensions by simply calling `screen.extension(...)` with an instance of them, just like `MyLoggerExtension`.
 

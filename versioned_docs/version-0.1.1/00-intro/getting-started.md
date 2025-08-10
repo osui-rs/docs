@@ -75,11 +75,11 @@ Save the file and run your application from the terminal:
 cargo run
 ```
 
-You should see "Hello, OSUI!" displayed in your terminal. You can press `Ctrl+C` or `Esc` (if you add an event handler for `Esc` like in the [Demo Application Guide](../guides/building-a-demo-app.md)) to exit the application.
+You should see "Hello, OSUI!" displayed in your terminal. You can press `Ctrl+C` or `Esc` (if you add an event handler for `Esc` like in the [Demo Application Guide](/docs/guides/building-a-demo-app)) to exit the application.
 
 ## Next Steps
 
-*   **[Concepts: Widget Model](../concepts/widget-model.md)**: Understand the core building blocks of OSUI: Elements, Components, and Widgets.
-*   **[Guides: Layout and Styling](../guides/layout-and-styling.md)**: Learn how to position and style your UI elements.
-*   **[Guides: Common Elements](../guides/common-elements.md)**: Explore the built-in UI elements provided by OSUI like Divs, Flex containers, and Input fields.
-*   **[Guides: State and Reactivity](../guides/state-and-reactivity.md)**: Discover how to make your UI dynamic and responsive to data changes.
+*   **[Concepts: Widget Model](/docs/concepts/widget-model)**: Understand the core building blocks of OSUI: Elements, Components, and Widgets.
+*   **[Guides: Layout and Styling](/docs/guides/layout-and-styling)**: Learn how to position and style your UI elements.
+*   **[Guides: Common Elements](/docs/guides/common-elements)**: Explore the built-in UI elements provided by OSUI like Divs, Flex containers, and Input fields.
+*   **[Guides: State and Reactivity](/docs/guides/state-and-reactivity)**: Discover how to make your UI dynamic and responsive to data changes.

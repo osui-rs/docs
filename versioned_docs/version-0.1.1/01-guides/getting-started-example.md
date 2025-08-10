@@ -4,7 +4,7 @@ This guide expands on the basic "Hello, OSUI!" example to demonstrate a slightly
 
 ## 1. Project Setup (Review)
 
-Ensure you have a new Rust project set up and `osui` added to your `Cargo.toml`. Refer to the [Getting Started](../intro/getting-started.md) guide if you haven't done this already.
+Ensure you have a new Rust project set up and `osui` added to your `Cargo.toml`. Refer to the [Getting Started](/docs/) guide if you haven't done this already.
 
 ## 2. The `main.rs` File
 
@@ -145,10 +145,10 @@ pub fn app(screen: Arc<Screen>) -> Rsx {
     *   Whenever `count` is marked as changed, the `DynWidget` associated with that `Div` automatically rebuilds its content and triggers a re-render in the next frame. This is why the number updates in the UI.
 4.  **`rsx!` Macro**:
     *   The `rsx!` macro provides a declarative way to define your UI tree. It creates a hierarchy of `Widget`s, each potentially containing an `Element` and various `Component`s.
-    *   `Paginator`, `FlexRow`, `FlexCol`, `Div`, `Heading`, `Input` are built-in [elements](../reference/elements/index.md) that define structure and appearance.
-    *   `@Transform` and `@Style` are [components](../reference/style.md) that attach layout and visual properties to elements.
-    *   `@Handler` is a [component](../reference/extensions.md) that allows a widget to listen for specific events (here, `crossterm::event::Event`).
-    *   `@Focused` and `@AlwaysFocused` are [components](../reference/extensions/focus.md) from `RelativeFocusExtension` that manage input focus.
+    *   `Paginator`, `FlexRow`, `FlexCol`, `Div`, `Heading`, `Input` are built-in [elements](/docs/reference/elements) that define structure and appearance.
+    *   `@Transform` and `@Style` are [components](/docs/reference/style) that attach layout and visual properties to elements.
+    *   `@Handler` is a [component](/docs/reference/extensions) that allows a widget to listen for specific events (here, `crossterm::event::Event`).
+    *   `@Focused` and `@AlwaysFocused` are [components](/docs/reference/extensions/focus) from `RelativeFocusExtension` that manage input focus.
 5.  **`screen.run()`**: This method starts the main application loop. It continuously:
     *   Renders all widgets.
     *   Processes events from extensions.
