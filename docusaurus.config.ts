@@ -27,8 +27,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.json",
           editUrl: "https://github.com/osui-rs/docs/tree/master/",
-          path: 'versioned_docs/version-0.1.0',
-          onlyIncludeVersions: (versions as any).default.filter((v) => v !== 'next'),
+          includeCurrentVersion: false,
         },
         blog: {
           showReadingTime: true,
@@ -50,7 +49,7 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
     },
     navbar: {
       title: "OSUI",
@@ -65,7 +64,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: "/blog", label: "Blog", position: "left" },
         {
           type: "docsVersionDropdown",
           position: "left",
