@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import * as versions from './versions.json';
 
 const config: Config = {
   title: "OSUI",
@@ -26,6 +27,8 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.json",
           editUrl: "https://github.com/osui-rs/docs/tree/master/",
+          path: 'versioned_docs/version-0.1.0',
+          onlyIncludeVersions: (versions as any).default.filter((v) => v !== 'next'),
         },
         blog: {
           showReadingTime: true,
