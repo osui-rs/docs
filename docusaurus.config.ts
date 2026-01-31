@@ -13,7 +13,6 @@ const config: Config = {
   organizationName: "osui-rs",
   projectName: "osui",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
