@@ -10,7 +10,7 @@ OSUI is a powerful and flexible Rust library for building advanced Terminal User
 
 ## What is OSUI?
 
-OSUI stands for "Operating System User Interface" in the terminal context. It aims to bridge the gap between simple text-based applications and rich graphical user interfaces by offering a robust framework for complex TUI development.
+OSUI stands for "OSmium User Interface" in the terminal context. It aims to bridge the gap between simple text-based applications and rich graphical user interfaces by offering a robust framework for complex TUI development.
 
 ### Key Features
 

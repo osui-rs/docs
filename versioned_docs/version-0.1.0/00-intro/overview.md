@@ -1,6 +1,6 @@
 # OSUI: A Rust Terminal User Interface Library
 
-OSUI (Operating System User Interface) is a powerful and flexible library for building interactive and customizable Terminal User Interfaces (TUIs) in Rust. It provides a declarative component system inspired by modern web frameworks, real-time keyboard input handling, and a virtual screen abstraction to simplify TUI development.
+OSUI (OSmium User Interface) is a powerful and flexible library for building interactive and customizable Terminal User Interfaces (TUIs) in Rust. It provides a declarative component system inspired by modern web frameworks, real-time keyboard input handling, and a virtual screen abstraction to simplify TUI development.
 
 ## Key Features
 
