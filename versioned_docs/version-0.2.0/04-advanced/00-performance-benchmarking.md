@@ -7,6 +7,12 @@ title: Performance Benchmarking
 
 Optimizing rendering performance is crucial for smooth and responsive TUI applications, especially those with complex layouts or frequent updates. OSUI provides a built-in `Benchmark` engine wrapper that allows you to easily measure the rendering speed of your components.
 
+## Current performance
+All the latest benchmark results are in [benchmark.csv](https://github.com/osui-rs/osui/blob/master/benchmark.csv)
+
+![Dot diagram](3dplot-gen-dot.png)
+![Dot diagram](3dplot-gen-surface.png)
+
 ## The `Benchmark` Engine
 
 The `osui::engine::benchmark` module offers the `Benchmark<T: Engine>` struct, which wraps an existing engine (like `Console`) and records detailed timing information for its rendering cycles.
