@@ -151,5 +151,3 @@ The `MyCustomLayout` component above demonstrates a basic two-column layout. You
 *   **Composition**: Layout components can themselves be children of other layout components, allowing you to build complex nested structures.
 
 While implementing a full layout system like CSS Flexbox is beyond the scope of OSUI's core, these primitives empower you to craft highly customized and visually rich terminal interfaces by manually managing space and component placement.
-
-**Next:** Explore the detailed [API Reference](../reference/00-crate-structure.md) for all OSUI modules and types.

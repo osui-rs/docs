@@ -71,5 +71,3 @@ graph TD
 *   **Extensibility**: The `Engine` trait allows for different rendering backends (e.g., to a file, to a graphical window, or for benchmarking) without modifying component logic.
 
 Understanding this pipeline helps in debugging rendering issues, optimizing performance, and building custom rendering logic within your OSUI applications.
-
-**Next:** Explore advanced topics like [Performance Benchmarking](../advanced/00-performance-benchmarking.md).

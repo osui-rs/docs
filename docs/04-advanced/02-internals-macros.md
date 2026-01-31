@@ -1,6 +1,5 @@
 ---
 sidebar_position: 2
-title: Internals: Macros
 ---
 
 # Internals: Macros
