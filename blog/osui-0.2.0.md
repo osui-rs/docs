@@ -18,11 +18,13 @@ This rewrite has been one of the best yet, while not fully frontend featured, th
 
 ## Performance
 The performance is much better and it's more predictable, however i do not have a clue on why the spikes appear on those specific iterations.
+![Dot](https://github.com/user-attachments/assets/d046d537-2feb-4f61-9d44-58e2e3bd9ded)
+![Scatter](https://github.com/user-attachments/assets/148b4b29-70f5-42a2-8fa5-19198bbf8e11)
 
 ## Scoping
 Scoping allows for the separation of dynamic and static DOM, for a more flexible UI, this makes `for` loops and `if` statements work perfectly without any bugs.
 
-![Scoping](https://private-user-images.githubusercontent.com/103524696/540255465-fe705306-260f-4443-b31f-17ecb9401ef8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk4OTMxOTMsIm5iZiI6MTc2OTg5Mjg5MywicGF0aCI6Ii8xMDM1MjQ2OTYvNTQwMjU1NDY1LWZlNzA1MzA2LTI2MGYtNDQ0My1iMzFmLTE3ZWNiOTQwMWVmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEzMVQyMDU0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jM2FjY2ZmMjQzMmRhZGVhZjFjZmMxMjg2YzFlZTFkNzdhNGM4OTA2MWU2MWM3ZjliNDY1YzE3ZGFjMmRiMTQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zuJ_ZkgzhP0Ww2Z3-zu12fQPQVRxl_kr5VQwHbDD5sQ)
+![Scoping](https://github.com/user-attachments/assets/fe705306-260f-4443-b31f-17ecb9401ef8)
 
 ## What's missing
 I've only worked on this version for about 2-3 weeks, so it's not fully featured, here are the features that will be added on future versions:
