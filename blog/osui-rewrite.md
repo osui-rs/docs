@@ -1,6 +1,7 @@
 ---
 title: Releasing OSUI v0.0.9
 description: A new upcoming version of OSUI will come out. Let's re-write it.
+date: 2025-01-19T23:16
 slug: osui-0.0.9-rewrite
 authors:
   - kleo-dev

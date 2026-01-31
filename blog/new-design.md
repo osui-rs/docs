@@ -1,6 +1,7 @@
 ---
 title: OSUI v0.0.9 alpha, what's new and should you update
 description: OSUI v0.0.9 is just on the edge of development, alpha is just the beginning.
+date: 2025-06-30T22:19
 slug: osui-0.0.9-alpha
 authors:
   - kleo-dev
