@@ -26,7 +26,7 @@ OSUI is designed to be efficient for terminal UIs, but there are always consider
 
 ### 1. Custom Elements
 
-As detailed in [Creating Custom Widgets](/docs/guides/creating-custom-widgets), the primary way to customize OSUI is by implementing the `Element` trait. This allows you to define completely new visual components or logical containers tailored to your application.
+As detailed in [Creating Custom Widgets](/docs/0.1.1/guides/creating-custom-widgets), the primary way to customize OSUI is by implementing the `Element` trait. This allows you to define completely new visual components or logical containers tailored to your application.
 
 ### 2. Custom Components
 

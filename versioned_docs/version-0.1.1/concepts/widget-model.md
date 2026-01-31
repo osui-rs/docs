@@ -97,4 +97,4 @@ The distinction allows OSUI to efficiently render static parts of the UI while p
 
 ### Dependency Tracking
 
-`DynWidget`s are at the core of OSUI's reactivity. They listen for changes in their registered dependencies. When a dependency changes, the widget's internal `load` closure is re-executed, effectively rebuilding its `Element` and `Component`s, leading to a re-render. This mechanism is explained in detail in [State Management](/docs/concepts/state-management).
+`DynWidget`s are at the core of OSUI's reactivity. They listen for changes in their registered dependencies. When a dependency changes, the widget's internal `load` closure is re-executed, effectively rebuilding its `Element` and `Component`s, leading to a re-render. This mechanism is explained in detail in [State Management](/docs/0.1.1/concepts/state-management).

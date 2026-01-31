@@ -4,7 +4,7 @@ While OSUI provides a rich set of built-in elements, you'll often need to create
 
 ## The `Element` Trait Revisited
 
-As discussed in [Concepts: Widget Model](/docs/concepts/widget-model), the `Element` trait is the contract for anything that can be rendered.
+As discussed in [Concepts: Widget Model](/docs/0.1.1/concepts/widget-model), the `Element` trait is the contract for anything that can be rendered.
 
 ```rust
 pub trait Element: Send + Sync {

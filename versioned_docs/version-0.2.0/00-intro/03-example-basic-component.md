@@ -108,5 +108,3 @@ This pattern allows you to build highly flexible and composable components, wher
 ## Next Steps
 
 You've seen how to define components and pass basic children. The next step is to explore the full power of OSUI's RSX syntax, including how to pass other types of props, use conditional rendering, and loop through data.
-
-**Next:** Dive into the details of the [RSX Syntax Guide](../guides/01-rsx-syntax.md).

@@ -73,7 +73,7 @@ pub fn App(cx: &Arc<Context>) -> View {
 
 *   **Parameter Names**: The names of your function parameters (e.g., `name`, `age`) become the names of the props you use when instantiating the component in `rsx!`.
 *   **Reference Types**: Props are typically passed as references (e.g., `&str`, `&u8`). The `#[component]` macro automatically "strips" the reference when generating the internal component struct, storing the owned type. This means you don't need to manually clone values unless you intend to move them into a closure or `State`.
-*   **`children` Prop**: As seen in the [previous guide](/docs/intro/03-example-basic-component.md), any content nested inside a component's `rsx!` invocation is implicitly passed as a `children: &Rsx` prop. This allows for flexible content composition.
+*   **`children` Prop**: As seen in the [previous guide](/docs/intro/example-basic-component), any content nested inside a component's `rsx!` invocation is implicitly passed as a `children: &Rsx` prop. This allows for flexible content composition.
 
 ### Example: Component with `children` and custom props
 
